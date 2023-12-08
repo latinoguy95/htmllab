@@ -4,29 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="main.css" rel="stylesheet" />
-    <script>
-        console.log('Hello, World!');
-        
-    </script>
+    <link href="styles/main.css" rel="stylesheet"/>
+    <script defer src="scripts/main.js"></script>
 </head>
 <body>
+   
     <header>
         <figure>
+            <center>
             <img src="WebPageLogo.png" height="90" width="180" alt="JCTLogo">
+        </center>
         </figure>
         <nav>
             <ul>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#servicehours">Service Hours</a></li>
+                <li><a href="#about" id="hoverAbout">About Me</a></li>
+                <li><a href="#projects" id="hoverProjects">Projects</a></li>
+                <li><a href="#contact" id="hoverContact">Contact</a></li>
+                <li><a href="#servicehours" id="hoverService">Service Hours</a></li>
+                <li><button id="alertButton">Alert</button></li>
+
             </ul>
         </nav>
     </header>
     <main>
         <article>
-            <section id="#about">
+            <section id="about">
+                <center>
                 <h2>About Me</h2>
                 
                 <p> Just a regular latino guy looking forward to starting a new life in Calgary, looking to start all over again. At least that's how I would describe myself.
@@ -34,27 +37,38 @@
                     know about myself is that I love Guiness Beer, English Premier League (I'm a Chelsea Football Club supporter), so you would regularly find me at a pub when I'm not doing schoolwork or working.
                     My third trivial aspect is that I'm a very creative person, so whatever idea comes to my mind, I'll do some drafts about it or even just portray it virtually.</p>  
                 <p></p>
-                <figure>
+                
+                
                     <img src="ChelseaFC.jpg" height="250" width="400" alt="StamfordBridge" class="center"> 
                     <figcaption>Stamford Bridge</figcaption>
+                </center>
                 </figure>
                 <figure>
+                    <center>
                     <img src="GuinessPint.jpg" height="400" width="300" alt="GuinessPint" class="center">
                     <figcaption>Guiness Pint</figcaption>
+                </center>
                 </figure>
             </section>
-            <section id="#projects">
+            <section id="projects">
+                <center>
                 <h2>Projects</h2>
+                </center>
                 <figure>
+                    <center>
                     <img src="LogoDesign.png" height="500" width="400" alt="LogoDesign" class="center">
                     <figcaption>Logo Design</figcaption>
+                </center>
                 </figure>
                 <figure>
+                    <center>
                     <img src="Lab2.jpg" height="400" width="400" alt="Lab2" class="center">
                     <figcaption> One of some experiments I've been doing at school</figcaption>
+                </center>
                 </figure>
             </section>
-            <section id="#servicehours">
+            <section id="servicehours">
+                <center>
                 <h2>Service Hours</h2>
                 <table>
                     <tr>
@@ -76,16 +90,28 @@
                         <td>8AM-1PM</td>
                     </tr>
                 </table>
+            </center>
             </section>
+            <contact>
             <section id="contact">
+                <center>
                 <h2>Contact</h2>
                 <a href="https://www.linkedin.com/in/juan-camilo-tovar-pazmi%C3%B1o-6ab13b117/">LinkedIn Profile</a>
-            
+            </center>   
             </section>
+            <figure>
+                <center>
+                <button id="btn-counter" onclick="totalClick(1)">Counter</button>
+                <span id="txt-counter">0</span>
+                <ol id="numbers"> </ol>
+            </center>
         </article>
     </main>
     <footer>
-        &copy; Juan Camilo Tovar, 2023
+        <p class="footnote bigtopmargin">
+        Copyright <span id= "cyear"></span> by Juan Camilo Tovar.
+        All rights reserved.
+    </p>
     </footer>
 </body>
 </html>
