@@ -1,0 +1,57 @@
+body {
+    background-color : navy;
+    }
+    h2 {
+    color : #ffffff;
+    }
+    p {
+    background-color : #80BFFF;
+    color : #ffffff;
+    text-align : center;
+    }
+    figcaption {
+    color : #ffffff;
+    }
+    nav ul {
+    list-style-type : none;
+    margin : 0;
+    padding : 0;
+    }
+    /* Navigation bar will be improved later*/
+    nav li {
+    border : white solid 1px;
+    }
+    footer {
+    padding : 3px;
+    color : #ffffff;
+    }
+    table, th, td {
+    border : #ffffff solid 1px;
+    width : 60%;
+    height : 30%;
+    background-color : aqua;
+    }
+    a {
+    color : #ffffff;
+    }
+    @media only screen and (min-width: 320px) {
+    nav ul {
+    display : flex;
+    justify-content : space-around;
+    }
+    }
+    @media only screen and (min-width: 800px) {
+    nav ul {
+    background : red;
+    }
+    img {
+    max-width : none;
+    }
+    }
+
+    .even {
+        color: yellow;
+    }
+    .odd {
+        color: red;
+    }
