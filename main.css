@@ -17,7 +17,7 @@ body {
     margin : 0;
     padding : 0;
     }
-    /* Navigation bar will be improved later*/
+    
     nav li {
     border : white solid 1px;
     }
@@ -47,4 +47,11 @@ body {
     img {
     max-width : none;
     }
+    }
+
+    .even {
+        color: yellow;
+    }
+    .odd {
+        color: red;
     }
